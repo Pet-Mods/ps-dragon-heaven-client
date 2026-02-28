@@ -597,6 +597,12 @@ export class BattleScene implements BattleSceneStub {
 		} else if (typeof rated === 'string' && rated.startsWith('Smogon Champions League')) {
 			bg = 'fx/bg-scl.png';
 			this.setBgm(-101);
+		} else if (typeof rated === 'string' && rated.startsWith('Solomods Premier League')) {
+			bg = 'fx/bg-dh-spl.png';
+			this.setBgm(-101);
+		} else if (typeof rated === 'string' && rated.startsWith('Pet Mods Premier League')) {
+			bg = 'fx/bg-dh-pmpl.png';
+			this.setBgm(-101);
 		} else {
 			if (gen <= 1) bg = 'fx/bg-gen1.png?';
 			else if (gen <= 2) bg = 'fx/bg-gen2.png?';
